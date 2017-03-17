@@ -8,6 +8,11 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+
+    
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+    
     <link rel="stylesheet" href="css/style.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,35 +24,41 @@
 <!-- head------------------------- -->
 <body>
     
-<header>
+<header id="page_top">
     <div id="header-in" class="container">
         <div class="row">
-            <div class="six columns logo">
-                <img class="u-max-full-width" src="images/top/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png">
-            </div>
+            <div class="twelve columns">
+                <div class="logo">
+                    <a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png"></a>
+                </div>
                 
-            <div class="six columns header_navi">
-                <img class="u-max-full-width headernavi_li pc" src="images/top/menu_login.png">
-                <img class="u-max-full-width headernavi_li pc" src="images/top/menu_cart.png">
-                <img class="u-max-full-width headernavi_li pc" src="images/top/menu_mypage.png">
-                <img class="u-max-full-width headernavi_li pc" src="images/top/menu_guide.png">
-                <div class="icons">
-                    <img class="u-max-full-width icon" src="images/top/facebook.png" srcset="images/top_sp/fb@2x.png 2x">
-                    <img class="u-max-full-width icon" src="images/top/insta.png" srcset="images/top_sp/insta@2x.png 2x">
-                    <img class="u-max-full-width icon sp" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png 2x">
+                <div class="header_navi">
+                    <img class="u-max-full-width headernavi_li pc" src="images/top/menu_login.png">
+                    <img class="u-max-full-width headernavi_li pc" src="images/top/menu_cart.png">
+                    <img class="u-max-full-width headernavi_li pc" src="images/top/menu_mypage.png">
+                    <a href="#shopping_guide"><img class="u-max-full-width headernavi_li pc" src="images/top/menu_guide.png"></a>
+                    
+                    <div class="icons">
+                        <img class="u-max-full-width icon" src="images/top/facebook.png" srcset="images/top_sp/fb@2x.png 2x">
+                        <img class="u-max-full-width icon" src="images/top/insta.png" srcset="images/top_sp/insta@2x.png 2x">
+                        <img class="u-max-full-width icon sp" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png 2x">
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </header>
 <!-- header------------------------- -->
-<div id="contents" class="container">
+<div id="contents" class="container detail_container">
     <div class="row">
         <div id="main" class="nine columns">
-            <div id="site_map">
-                <img src="images/list/home_icon.png">
-                <p>HOME / </p>
-                <p>カテゴリー名 / </p>
+            <div class="site_map gm">
+                <a href="index.html"><img src="images/list/home_icon.png"></a>
+                <a href="index.html"><p>HOME</p></a>
+                <p>/</p>
+                <a href="list.html"><p>カテゴリー名</p></a>
+                <p>/</p>
                 <p>商品名</p>
             </div>
             
@@ -57,24 +68,24 @@
                 
                 <div class="pro_images">
                     <div class="big_proimage">
-                        <img src="images/products/pro_img_01.jpg">
+                        <img class="u-max-full-width" src="images/products/pro_img_01.jpg">
                     </div>
                     
                     <div class="flex_row">
-                        <div class="product">
-                            <img class="u-max-full-width" src="images/products/pro_img_01.jpg">
+                        <div class="product real_photo">
+                            <img class="u-max-full-width real_photo" src="images/products/pro_img_01.jpg">
                         </div>
-                        <div class="product">
-                            <img class="u-max-full-width" src="images/products/pro_img_02.jpg">
+                        <div class="product real_photo">
+                            <img class="u-max-full-width real_photo" src="images/products/pro_img_02.jpg">
                         </div>
-                        <div class="product">
-                            <img class="u-max-full-width" src="images/products/pro_img_03.jpg">
+                        <div class="product real_photo">
+                            <img class="u-max-full-width real_photo" src="images/products/pro_img_03.jpg">
                         </div>
-                        <div class="product">
-                            <img class="u-max-full-width" src="images/products/pro_img_04.jpg">
+                        <div class="product real_photo">
+                            <img class="u-max-full-width real_photo" src="images/products/pro_img_04.jpg">
                         </div>
-                        <div class="product">
-                            <img class="u-max-full-width" src="images/products/pro_img_05.jpg">
+                        <div class="product real_photo">
+                            <img class="u-max-full-width real_photo" src="images/products/pro_img_05.jpg">
                         </div>
                         <div class="product">
                             <img class="u-max-full-width" src="images/products/gray_pro_img.jpg">
@@ -96,26 +107,26 @@
                 <!-- pro_images -->
                 
                 <div class="color_size">
-                    <img src="title_color.png">
+                    <img src="images/products/title_color.png">
                     <table>
-                        <tr>
+                        <tr class="table_gray">
                             <th></th>
                             <td>カラー１</td>
                             <td>カラー２</td>
                         </tr>
                         <tr>
                             <th>サイズ</th>
-                            <td></td>
-                            <td></td>
+                            <td>□</td>
+                            <td>□</td>
                         </tr>
                     </table>
                 </div>
                 <!-- color_size -->
                 
-                <div ckass="price_quantity">
+                <div class="price_quantity">
                     <div class="price">
                         <img src="images/products/title_price.png">
-                        <h3><span>&yen;1,000</span>(tax in)</h3>
+                        <h3><span>&yen;<span class="price_number">1,000</span></span>(tax in)</h3>
                     </div>
                     <div class="quantity">
                         <img src="images/products/title_quantity.png">
@@ -129,7 +140,7 @@
                 
                 <div class="pro_text_area">
                     <h2>商品説明</h2>
-                    <h2>■説明タイトル説明タイトル説明タイトル説明タイトル</h2>
+                    <h3>■説明タイトル説明タイトル説明タイトル説明タイトル</h3>
                     <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
                     <br>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
                     <br>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
@@ -137,11 +148,11 @@
                     <table>
                         <tr>
                             <th>カラー</th>
-                            <td>説明文が入ります>説明文が入ります>説明文が入ります</td>
+                            <td>説明文が入ります説明文が入ります説明文が入ります</td>
                         </tr>
                         <tr>
                             <th>サイズ</th>
-                            <td>説明文が入ります>説明文が入ります>説明文が入ります</td>
+                            <td>説明文が入ります説明文が入ります説明文が入ります</td>
                         </tr>
                     </table>
                 </div>
@@ -149,7 +160,7 @@
                 
             </div>
             
-            <div id="recent_items">
+            <div id="recent_items" class="gp">
                 <div class="title">
                     <img class="u-max-full-width pc" src="images/list/recent_pro_pc.png">
                     <img class="u-max-full-width sp" src="images/list/title_recent_pro.png" srcset="images/list/title_recent_pro@2x.png 2x">
@@ -157,7 +168,7 @@
                 <div class="flex_row">
                     <div class="item">
                         <div class="item_image">
-                            <img class="u-max-full-width" src="images/top/item_07.jpg">
+                            <a href="products.html"><img class="u-max-full-width" src="images/top/item_07.jpg"></a>
                         </div>
                         <div class="item_name">
                             <p>商品名が入ります商品名が入ります商品名が入ります</p>
@@ -168,7 +179,7 @@
                     </div>
                     <div class="item">
                         <div class="item_image">
-                            <img class="u-max-full-width" src="images/top/item_08.jpg">
+                            <a href="products.html"><img class="u-max-full-width" src="images/top/item_08.jpg"></a>
                         </div>
                         <div class="item_name">
                             <p>商品名が入ります商品名が入ります商品名が入ります</p>
@@ -179,7 +190,7 @@
                     </div>
                     <div class="item">
                         <div class="item_image">
-                            <img class="u-max-full-width" src="images/top/item_09.jpg">
+                            <a href="products.html"><img class="u-max-full-width" src="images/top/item_09.jpg"></a>
                         </div>
                         <div class="item_name">
                             <p>商品名が入ります商品名が入ります商品名が入ります</p>
@@ -191,7 +202,7 @@
                 </div>
             </div>
             
-            <div id="shopping_guide">
+            <div id="shopping_guide" class="gp">
                 <div class="title">
                     <img class="u-max-full-width pc" src="images/top/title_guide.png">
                     <img class="u-max-full-width sp" src="images/top_sp/title_guide.png" srcset="images/top_sp/title_guide@2x.png 2x">
@@ -222,7 +233,7 @@
             <!-- shopping_guide ----------------------- -->
         </div>
         <!-- main------------------------- -->
-        <div id="sidebar" class="three columns">
+        <div class="sidebar three columns gp">
             <div id="item_search">
                 <img class="pc" src="images/top/itemsearch.png">
                 <div class="search_form">
@@ -233,8 +244,8 @@
             <div id="links">
                 <div class="links_title">
                     <img src="images/top/pagelink.png">
-                    <img class="next_icon" src="images/top/next_icon.png">
-                    <img class="next_icon" src="images/top/down_icon.png">
+                    <img class="title_nexticon next_icon" src="images/top/next_icon.png">
+                    <img class="title_downicon down_icon" src="images/top/down_icon.png">
                 </div>
                 <ul class="links_li toggle">
                     <li>リンク名<img class="next_icon" src="images/top/next_icon.png"></li>
@@ -248,15 +259,16 @@
             <div id="categories">
                 <div class="categories_title">
                     <img src="images/top/categories.png">
-                    <img class="next_icon" src="images/top/next_icon.png">
+                    <img class="title_nexticon next_icon" src="images/top/next_icon.png">
+                    <img class="title_downicon down_icon" src="images/top/down_icon.png">
                 </div>
-                <ul class="categories_li">
-                    <li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li>
-                    <li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li>
-                    <li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li>
-                    <li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li>
-                    <li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li>
-                    <li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li>
+                <ul class="categories_li toggle">
+                    <a href="list.html"><li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li></a>
+                    <a href="list.html"><li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li></a>
+                    <a href="list.html"><li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li></a>
+                    <a href="list.html"><li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li></a>
+                    <a href="list.html"><li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li></a>
+                    <a href="list.html"><li>カテゴリー名<img class="next_icon" src="images/top/next_icon.png"></li></a>
                 </ul>
             </div>
             <div id="about">
@@ -267,7 +279,9 @@
                     <img class="about_image" src="images/top/about_img.jpg">
                     <div class="about_text">
                         <p>お店の説明がはいりますお店の説明がはいりますお店の説明がはいります</p>
-                        <img src="images/top/more_btn.png">
+                        <div class="more_btn">
+                            <img src="images/top/more_btn.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -279,7 +293,9 @@
                     <img class="shopinfo_image" src="images/top/shopinfo_img.jpg">
                     <div class="shopinfo_text">
                         <p >お店の説明がはいりますお店の説明がはいりますお店の説明がはいります</p>
-                        <img src="images/top/more_btn.png">
+                        <div class="more_btn">
+                            <img src="images/top/more_btn.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -292,7 +308,7 @@
 <footer class="container">
     <div class="row">
         <div class="twelve columns pagetop_btn">
-            <img src="images/top/pagetop.png">
+            <a href="#page_top"><img src="images/top/pagetop.png"></a>
         </div>
         <div class="twelve columns hr">
             <ul class="footnavi_li">
@@ -309,15 +325,55 @@
 <!-- footer------------------------- -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script src="carousel.js"></script>
+
 <script>
     $(document).ready(function(){
         $(".links_title").click(function(){
             $(".links_li").slideToggle();
-            //$(".links_nexticon").attr("src", "images/top/down_icon.png");
-            $(".links_title img").toggle();
-            //$(".links_li").slideToggle();
+            
+            if($(".links_title").hasClass("open")){
+                $(".links_title").removeClass("open");
+                $(".links_title").find(".title_downicon").hide();
+                $(".links_title").find(".title_nexticon").show();
+                
+            }else{
+                $(".links_title").addClass("open");
+                $(".links_title").find(".title_nexticon").hide();
+                $(".links_title").find(".title_downicon").show();
+            };
+            
         });
     });
+    
+    $(document).ready(function(){
+        $(".categories_title").click(function(){
+            $(".categories_li").slideToggle();
+            
+            if($(".categories_title").hasClass("open")){
+                $(".categories_title").removeClass("open");
+                $(".categories_title").find(".title_downicon").hide();
+                $(".categories_title").find(".title_nexticon").show();
+                
+            }else{
+                $(".categories_title").addClass("open");
+                $(".categories_title").find(".title_nexticon").hide();
+                $(".categories_title").find(".title_downicon").show();
+            };
+            
+        });
+    });
+    
+    $(window).load(function(){
+        $(".real_photo img").click(function(){
+            var img_src = $(this).attr("src");
+            $(".big_proimage img").attr("src", img_src);
+        });
+    });
+    
+
 </script>
 
 </body>
