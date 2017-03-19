@@ -39,7 +39,14 @@
                     <div class="icons">
                         <img class="u-max-full-width icon" src="images/top/facebook.png" srcset="images/top_sp/fb@2x.png 2x">
                         <img class="u-max-full-width icon" src="images/top/insta.png" srcset="images/top_sp/insta@2x.png 2x">
-                        <img class="u-max-full-width icon sp" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png 2x">
+                        <img class="u-max-full-width icon sp menu_icon" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png 2x">
+                        
+                        <ul class="hide_menu sp">
+                            <li><img class="u-max-full-width headernavi_li" src="images/top/menu_login.png"></li>
+                            <li><img class="u-max-full-width headernavi_li" src="images/top/menu_cart.png"></li>
+                            <li><img class="u-max-full-width headernavi_li" src="images/top/menu_mypage.png"></li>
+                            <li><a href="#shopping_guide"><img class="u-max-full-width headernavi_li sp_shoppingguide" src="images/top/menu_guide.png"></a></li>
+                        </ul>
                     </div>
                     
                 </div>
@@ -353,8 +360,16 @@
                 $(".links_title").addClass("open");
                 $(".links_title").find(".title_nexticon").hide();
                 $(".links_title").find(".title_downicon").show();
-            };
+            }
             
+        });
+        
+        $(".menu_icon").click(function(){
+            $(".hide_menu").slideToggle();
+        });
+        
+        $(".sp_shoppingguide").click(function(){
+            $(".hide_menu").hide();
         });
     });
     

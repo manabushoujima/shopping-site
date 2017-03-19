@@ -40,7 +40,8 @@ header .header_navi {
         vertical-align: bottom;
         cursor: pointer; } }
   header .header_navi .icons {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     header .header_navi .icons .icon {
       margin: 0 0.45rem;
       text-align: center; }
@@ -52,6 +53,22 @@ header .header_navi {
           margin-left: 0.6rem; }
           header .header_navi .icons .icon.sp {
             display: none; } }
+    header .header_navi .icons .hide_menu {
+      list-style: none;
+      width: 50%;
+      float: left;
+      position: absolute;
+      top: 30px;
+      margin: 0 auto;
+      left: 25%;
+      z-index: 10;
+      display: none; }
+      header .header_navi .icons .hide_menu li {
+        background: white;
+        border: 1px solid #e2ddd4;
+        margin: 0;
+        padding: 10px;
+        text-align: left; }
   @media (min-width: 960px) {
     header .header_navi .headernavi_li {
       padding-right: 0.6rem;

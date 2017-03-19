@@ -84,6 +84,7 @@ header{
         
         .icons{
             text-align: center;
+            position: relative;
             
             .icon{
                 margin: 0 0.45rem;
@@ -99,6 +100,29 @@ header{
                     &.sp{
                         display: none;
                     }
+                }
+            }
+            
+            .hide_menu{
+                list-style: none;
+                width: 50%;
+                float: left;
+                
+                position: absolute;
+                top: 30px;
+                margin: 0 auto;
+                left: 25%;
+                z-index: 10;
+                
+                display: none;
+                
+                li{
+                    background: white;
+                    border: 1px solid $gray1;
+                    margin: 0;
+                    padding: 10px;
+                    text-align: left;
+                
                 }
             }
         }
